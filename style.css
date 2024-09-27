@@ -14,6 +14,32 @@ body{
   background: #f7f7f7;
   padding: 0 10px;
 }
+.wrapper .chat-area header .call-icon {
+  margin-left: 66px;
+
+}
+.wrapper .chat-area header .call-icon .fa-video{
+  padding-right: 25px;
+
+}
+.wrapper .chat-area header .call-icon .fa-phone{
+  padding-right: 25px;
+
+}
+.custom-file-upload {
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.file-input {
+  display: none;
+}
+.favicon{
+  height: 45px;
+  width: 45px;
+}
 .wrapper{
   background: #fff;
   max-width: 450px;
@@ -156,6 +182,22 @@ body{
   border-radius: 5px;
   font-size: 17px;
 }
+.wrapper section .logout{
+  display: block;
+  width: 90px;
+  background: #333;
+  color: #fff;
+  outline: none;
+  border: none;
+  padding: 7px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 17px;
+}
+.edit-profile{
+  display: flex;
+  flex-direction: column;
+}
 .users .search{
   margin: 20px 0;
   display: flex;
@@ -246,10 +288,12 @@ body{
 .chat-area header .back-icon{
   color: #333;
   font-size: 18px;
+  padding: 0px;
+  margin: 0px;
 }
 .chat-area header img{
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
   margin: 0 15px;
 }
 .chat-area header .details span{
@@ -349,7 +393,20 @@ body{
 @media screen and (max-width: 450px) {
   .form, .users{
     padding: 20px;
+    height:754px;
   }
+  .wrapper .chat-area header .call-icon {
+  margin-left: 44px;
+
+}
+.wrapper .chat-area header .call-icon .fa-video{
+  padding-right: 20px;
+
+}
+.wrapper .chat-area header .call-icon .fa-phone{
+  padding-right: 20px;
+
+}
   .form header{
     text-align: center;
   }
@@ -382,8 +439,20 @@ body{
   .chat-area header{
     padding: 15px 20px;
   }
+  .chat-area header img{
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
+  }
+.chat-area header .details span{
+  font-size: 15px;
+  font-weight: 500;
+}
+.chat-area header .details p{
+  font-size: 13px;
+}
   .chat-box{
-    min-height: 400px;
+    min-height: 510px;
     padding: 10px 15px 15px 20px;
   }
   .chat-box .chat p{
@@ -410,3 +479,4 @@ body{
     width: 45px;
   }
 }
+

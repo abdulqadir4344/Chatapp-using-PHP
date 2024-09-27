@@ -1,3 +1,4 @@
+
 <?php
     while($row = mysqli_fetch_assoc($query)){
         $sql2 = "SELECT * FROM messages WHERE (incoming_msg_id = {$row['unique_id']}
@@ -15,7 +16,7 @@
         ($row['status'] == "Offline now") ? $offline = "offline" : $offline = "";
         ($outgoing_id == $row['unique_id']) ? $hid_me = "hide" : $hid_me = "";
 
-        $output .= '<a href="chat.php?user_id='. $row['unique_id'] .'">
+        $output .= '<a href="talk.php?user_id='. $row['unique_id'] .'">
                     <div class="content">
                     <img src="php/images/'. $row['img'] .'" alt="">
                     <div class="details">

@@ -1,12 +1,14 @@
 <?php 
   session_start();
   include_once "php/config.php";
+
   if(!isset($_SESSION['unique_id'])){
     header("location: login.php");
   }
 ?>
 <?php include_once "header.php"; ?>
 <body>
+<!-- <i class="fa-solid fa-badge-check" style="color: #0084ff;"></i> -->
   <div class="wrapper">
     <section class="users">
       <header>
@@ -17,13 +19,17 @@
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
-          <img src="php/images/<?php echo $row['img']; ?>" alt="">
+          <a href="edit-profile.php"><img src="php/images/<?php echo $row['img']; ?>" alt=""></a>
           <div class="details">
-            <span><?php echo $row['fname']. " " . $row['lname'] ?></span>
+            <span><?php echo $row['fname']. " " . $row['lname'] ?></span> 
+            <?php if($row['is_verified']==1){
+              echo '<i class="fa-solid fa-badge-check" style="color: #0084ff;"></i>';
+            }
+            ?>
             <p><?php echo $row['status']; ?></p>
           </div>
         </div>
-        <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a>
+        <!-- <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a> -->
       </header>
       <div class="search">
         <span class="text">Select an user to start chat</span>
