@@ -27,7 +27,7 @@
         <div class="dropdown-content">
             <a href="#">New Chat</a>
             <a href="#">New Group</a>
-            <a href="setting.php">Settings</a>
+            <a href="settings.php">Settings</a>
             <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>">Logout</a>
         </div>
     </div>
@@ -43,7 +43,8 @@
               $row = mysqli_fetch_assoc($sql);
             }
           ?>
-          <a href="edit-profile.php"><img src="php/images/<?php echo $row['img']; ?>" alt=""></a>
+          <img src="php/images/<?php echo $row['img']; ?>" alt="">
+          <!-- <a href="edit-profile.php"><img src="php/images/<?php echo $row['img']; ?>" alt=""></a> -->
           <div class="details">
             <span><?php echo $row['fname']. " " . $row['lname'] ?></span> 
             <?php if($row['is_verified']==1){

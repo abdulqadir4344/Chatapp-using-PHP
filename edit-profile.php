@@ -16,7 +16,7 @@
 <body>
   <div class="wrapper">
     <section class="form edit-profile">
-      <header><a href="users.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>  Edit Profile</header>
+      <header><a href="settings.php" class="back-icon"><i class="fas fa-arrow-left"></i></a>  Edit Profile</header>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
       <div class="field image">
       <center>

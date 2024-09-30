@@ -10,7 +10,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+
   background: #f7f7f7;
   padding: 0px;
 }
@@ -241,7 +241,7 @@ body{
   margin-left: 20px;
 }
 :is(.users, .users-list) .details span{
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 .users header .logout{
@@ -347,9 +347,6 @@ body{
 }
 .users-list a .details p{
   color: #67676a;
-}
-.users-list a .details span{
-  font-size: 17px;
 }
 .users-list a .status-dot{
   font-size: 12px;
