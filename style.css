@@ -31,11 +31,13 @@ body{
   display: flex;
   float: right;
   gap: 27px;
+
 }
 .icon {
   cursor: pointer;
   color: white;
   font-size: 20px;
+  top: 100px;
 }
 .icon:hover {
   opacity: 0.7;
@@ -49,42 +51,53 @@ body{
   position: relative;
   display: inline-block;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
-  border-radius: 0 0 5px 5px;
-}
-.dropdown-content a {
-  background-color: #333;
-  color: rgb(255, 255, 255);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  display: block;
-  background-color: #333;
-  top: 46px;
-  right: -20px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  top: 46px;
-  right: -20px;
-}
 
 .dropbtn {
   background-color: #5f5f5f;
   color: white;
+  padding: 12px 16px;
+  font-size: 20px;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.dropbtn i {
+  pointer-events: none; /* ✅ Let clicks go through the icon to the button */
+  font-size: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  top: 55px;
+  right: -20px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown-content a {
+  background-color: #000000;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+.show {
+  display: block;
+}
+
+
 
 /* menubar css end */
 .wrapper .chat-area header .call-icon {
@@ -569,6 +582,8 @@ body{
 }
 
 /* settings css start */
+
+
 .settings{
 
   padding: 10px 7px;
@@ -642,13 +657,13 @@ body{
 }
 .option-list i{
   font-size: 18px;
-  margin-left: 10px;
+  margin-left: 28px;
 }
 .option-list p{
   display: flex;
   font-size: 14px;
   color: rgb(98, 95, 95);
-  margin-left: 49px;
+  margin-left: 64px;
 }
 
 
@@ -672,3 +687,11 @@ body{
 
 }
 /* option list css end */
+
+/* account list css */
+.account-back-icon{
+  display: flex;
+  color: #ffffff;
+  font-size: 18px;
+  gap: 14px;
+}

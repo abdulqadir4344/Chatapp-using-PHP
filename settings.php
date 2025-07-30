@@ -17,6 +17,7 @@
 
 <!-- <i class="fa-solid fa-badge-check" style="color: #0084ff;"></i> -->
   <div class="wrapper">
+    <div class="fixed-container">
       <navbar class="navbar">
         <a href="users.php" class="back-icon"><i class="fas fa-arrow-left setting-back-icon"></i></a><h3>Settings</h3>
         <div class="icons">
@@ -51,8 +52,9 @@
         </div>
         <!-- <a href="php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">Logout</a> -->
       </header>
+      </div>
       <div class="option-list">
-            <div><i class="fa-solid fa-key-skeleton-left-right"></i><a href="#">Account</a><p>Secuity Notifications, change Email</p></div>
+            <div><i class="fa-solid fa-key-skeleton-left-right"></i><a href="account.php">Account</a><p>Secuity Notifications, change Email</p></div>
             <div><i class="fa-solid fa-lock-keyhole"></i><a href="#">Privacy</a><p>Blocked, disappearing messages</p></div>
             <div><i class="fa-solid fa-user-tie"></i><a href="#">Avatar</a><p>Create, edit, profile photo</p></div>
             <div><i class="fa-solid fa-heart"></i><a href="#">Favourites</a><p>Add, reorder, remove</p></div>

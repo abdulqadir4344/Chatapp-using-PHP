@@ -20,11 +20,11 @@
   <navbar class="navbar">
         <h1>iTalk</h1>
         <div class="icons">
-            <i class="fas fa-qrcode icon" title="QR Scanner"></i>
-            <i class="fas fa-camera icon" title="Camera"></i>
+
             <div class="dropdown">
-        <button class="dropbtn"> <i class="fas fa-ellipsis-v icon" title="More Options"></i></button>
-        <div class="dropdown-content">
+            <button class="dropbtn" onclick="toggleDropdown()"></i><i class="fas fa-bars"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
             <a href="#">New Chat</a>
             <a href="#">New Group</a>
             <a href="settings.php">Settings</a>

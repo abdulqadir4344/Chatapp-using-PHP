@@ -51,14 +51,20 @@ setInterval(() =>{
 
 
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.style.display === "block") {
-              openDropdown.style.display = "block";
-          }
-      }
+
+  function toggleDropdown() {
+    document.getElementById("myDropdown").classList.toggle("show");
   }
-}
+
+  // Optional: Close the dropdown if user clicks outside
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      const dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        if (dropdowns[i].classList.contains('show')) {
+          dropdowns[i].classList.remove('show');
+        }
+      }
+    }
+  }
+
